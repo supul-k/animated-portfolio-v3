@@ -1,4 +1,5 @@
 import "./app.scss";
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
@@ -6,15 +7,14 @@ function App() {
   return (
     <>
       <div>
-        <section>
+        <section id="HomePage">
           <Navbar />
+          <Hero />
         </section>
-        <section>Parallax</section>
-        <section>Services</section>
-        <section>Portfolio1</section>
-        <section>Portfolio2</section>
-        <section>Portfolio3</section>
-        <section>Contact</section>
+        <section id="Services">Services</section>
+        <section id="Portfolio">Portfolio</section>
+        <section id="Contact">Portfolio1</section>
+        <section id="About">Portfolio2</section>
       </div>
     </>
   )
