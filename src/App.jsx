@@ -1,5 +1,6 @@
 import "./app.scss";
 import Contact from "./components/contact/Contact";
+import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <div>
+        <Cursor />
         <section id="HomePage">
           <Navbar />
           <Hero />
@@ -24,11 +26,11 @@ function App() {
         <section id="Parallax2">
           <Parallax type="portfolio" />
         </section>
-        <Portfolio />
-        <section id="Contact">
+        {/* <Portfolio /> */}
+        {/* <section id="Contact">
           <Contact />
-        </section>
-        <section id="About">Portfolio2</section>
+        </section> */}
+        {/* <section id="About">Portfolio2</section> */}
       </div>
     </>
   )
