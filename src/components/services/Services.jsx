@@ -33,7 +33,8 @@ const Services = () => {
             // whileInView="animate"
             ref={ref}
             // animate={isInView && "animate"}
-            animate={"animate"}
+            animate={ window.innerWidth <= 738 ? "animate" : isInView && "animate"} 
+            // animate={"animate"}
         >
             <motion.div className="textContainer" variants={textVariants}>
                 <motion.p>
