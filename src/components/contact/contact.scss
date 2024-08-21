@@ -43,7 +43,7 @@
 
     .formContainer{
         flex: 1;
-        position: relative;       
+        position: relative;   
 
         @include mobile{
             width: 100%;
@@ -54,8 +54,10 @@
         }
 
         .mobileSizePhoneSvg{
+            display: none;
 
             @include mobile{
+                display: block;
                 stroke: orange;
                 position: absolute;
                 margin: auto;

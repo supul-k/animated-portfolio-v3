@@ -17,10 +17,10 @@ const Navbar = () => {
                     Supul Kalhara
                 </motion.span>
                 <div className="social">
-                    <a href="#"><img src="./images/facebook.png" alt="facebook" /></a>
+                    <a href="https://www.facebook.com/supul.kalhara"><img src="./images/facebook.png" alt="facebook" /></a>
                     <a href="#"><img src="./images/instagram.png" alt="instagram" /></a>
-                    <a href="#"><img src="./images/linkedin.png" alt="linkedin" /></a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/supulkalhara/"><img src="./images/linkedin.png" alt="linkedin" /></a>
+                    <a href="https://github.com/supul-k">
                         <svg viewBox="0 0 73 73"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"

@@ -38,6 +38,14 @@ const slideTextVariants = {
     }
 }
 
+const items = [
+    { id: 1, name: "HomePage", link: "#HomePage" },
+    { id: 2, name: "Services", link: "#Services" },
+    { id: 3, name: "Portfolio", link: "#Portfolio" },
+    { id: 4, name: "Contact", link: "#Contact" },
+    { id: 5, name: "About", link: "#About" }
+]
+
 const Hero = () => {
     return (
         <div className="hero">
@@ -53,21 +61,21 @@ const Hero = () => {
                         Full stack Web Developer
                     </motion.h1>
                     <motion.div className="buttons">
-                        <motion.button variants={textVariants}>
-                            See the Latest Works
+                        <motion.button variants={textVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>
+                            <a href="https://github.com/supul-k">See the Latest Works</a>
                         </motion.button>
-                        <motion.button variants={textVariants}>
-                            Contact Me
+                        <motion.button variants={textVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>
+                            <a href="#Contact">Contact Me</a>
                         </motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/images/scroll.png" alt="scroller" />
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={slideTextVariants} initial="initial" animate="animate">
-                Writer Content Creator Influencer
+                Web solutions from front to back
             </motion.div>
             <div className="imageContainer">
-                <img src="/images/hero.png" alt="hero" />
+                <img src="/images/heroes.png" alt="hero" />
             </div>
         </div>
     )
