@@ -71,7 +71,8 @@
         white-space: nowrap;
         color: #ffffff09;
         width: 50%;
-        font-weight: bold;
+        font-weight: bold;        
+        pointer-events: none;
     }
 
     .imageContainer{
@@ -79,6 +80,10 @@
         top: 0;
         right: 0;
         height: 100%;
+
+        img{
+            height: -webkit-fill-available;
+        }
 
         @include mobile{
             height: 55%;
