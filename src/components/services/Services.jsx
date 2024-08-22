@@ -23,7 +23,7 @@ const Services = () => {
 
     const ref = useRef();
 
-    const isInView = useInView(ref, {margin: "-100px"});
+    const isInView = useInView(ref, { margin: "-100px" });
 
     return (
         <motion.div
@@ -38,59 +38,55 @@ const Services = () => {
         >
             <motion.div className="textContainer" variants={textVariants}>
                 <motion.p>
-                    I focus on helping your brand grow
-                    <br /> and move forward
+                    Empowering your business with new 
+                    <br />technologies  and innovative solutions
                 </motion.p>
                 <motion.hr />
             </motion.div>
             <motion.div className="titleContainer" variants={textVariants}>
                 <div className="title">
-                    <img src="/images/people.webp" alt="" />
+                    <img src="/images/solutions.webp" alt="" />
                     <h1>
-                        <motion.b whileHover={{color: "orange"}}>Unique</motion.b> Ideas
+                        <motion.b whileHover={{ color: "orange" }}>Innovative</motion.b> Solutions
                     </h1>
                 </div>
                 <div className="title">
                     <h1>
-                        <motion.b whileHover={{color: "orange"}}>For Your</motion.b> Business.
+                        <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Growth.
                     </h1>
-                    <button>WHAT WE DO?</button>
+                    <button>MY SERVICES</button>
                 </div>
             </motion.div>
-             <motion.div className="listContainer" variants={textVariants}>
+            <motion.div className="listContainer" variants={textVariants}>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
+                    <h2>Enterprise-Level Applications</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex,
-                        ipsam voluptatum sunt quidem odio, facilis neque recusandae perferendis
-                        sed enim quibusdam officia ducimus similique pariatur maiores ad dignissimos reiciendis!
+                        Build enterprise-grade web applications using React for the front-end and ASP.NET with Entity Framework Core and MSSQL for the back-end.
+                        Suitable for businesses needing secure and scalable solutions.
                     </p>
                     <button>Go</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
+                    <h2>Full-Stack Web Applications</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex,
-                        ipsam voluptatum sunt quidem odio, facilis neque recusandae perferendis
-                        sed enim quibusdam officia ducimus similique pariatur maiores ad dignissimos reiciendis!
+                        Develop robust and scalable web applications using React for the front-end and Node.js with MongoDB for the back-end.
+                        Ideal for building dynamic, data-driven applications.
                     </p>
                     <button>Go</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
+                    <h2>Animated Portfolio Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex,
-                        ipsam voluptatum sunt quidem odio, facilis neque recusandae perferendis
-                        sed enim quibusdam officia ducimus similique pariatur maiores ad dignissimos reiciendis!
+                        Create visually engaging, interactive portfolio websites with smooth animations using React and Framer Motion.
+                        Perfect for showcasing your work in a dynamic and modern way.
                     </p>
                     <button>Go</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
+                    <h2>Cloud Deployment & DevOps</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex,
-                        ipsam voluptatum sunt quidem odio, facilis neque recusandae perferendis
-                        sed enim quibusdam officia ducimus similique pariatur maiores ad dignissimos reiciendis!
+                        Deploy and manage applications on AWS, implement CI/CD pipelines, and use Docker and Kubernetes for containerization and orchestration.
+                        Ensure smooth and automated deployment processes.
                     </p>
                     <button>Go</button>
                 </motion.div>
