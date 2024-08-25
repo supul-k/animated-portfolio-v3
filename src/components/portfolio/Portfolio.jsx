@@ -5,21 +5,21 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "Web App",
-        img: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+        title: "Salon & Spa Booking System",
+        img: "/projects/spa.webp",
+        desc: "Salon & Spa Booking System is a web application that allows users to book appointments at salons and spas. The application features a user-friendly interface that allows users to browse services, view availability, and book appointments online. The application is built using React, ASP.NET Core, Entity Framework Core, and MS SQL, and features a responsive design that is optimized for all devices.",
     },
     {
         id: 2,
-        title: "Mobile App",
-        img: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+        title: "Portfolio Website",
+        img: "/projects/portfolio.webp",
+        desc: "Portfolio Website is a personal project that showcases my skills, projects, and experience. It is built using React, Sass, and Framer Motion. The website features a clean and modern design, with smooth animations and transitions. The website is fully responsive and optimized for all devices.",
     },
     {
         id: 3,
-        title: "Design",
-        img: "https://images.pexels.com/photos/417458/pexels-photo-417458.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
+        title: "Image Culling Software",
+        img: "/projects/culling.webp",
+        desc: "Image Culling Software is a desktop application that allows photographers to quickly and easily cull through large collections of images. The software uses advanced algorithms to analyze and rank images based on various criteria, such as focus, exposure, and composition. Users can then review and select the best images for further editing and processing.",
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const items = [
     {
         id: 5,
         title: "Payment Gateways",
-        img: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=600",
+        img: "/projects/payment.webp",
         desc: "This project involves integrating the PayHere and Cybersource payment gateways into a web application using Symfony, PHP, and MySQL. The integration ensures secure and efficient handling of online payments, providing users with a seamless payment experience. The project includes features such as payment processing, transaction management, and webhook handling.",
     },
 ]
