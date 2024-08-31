@@ -164,7 +164,7 @@ const Contact = () => {
                     transition={{ delay: 4, duration: 1 }}
                     onSubmit={sendEmail}
                 >
-                    <h2>Contact Us</h2>
+                    <h2>Contact Me</h2>
                     <input type="text" placeholder="Name" name="name" />
                     <input type="email" placeholder="Email" name="email" />
                     <textarea placeholder="Message" rows={8} name="message"></textarea>
