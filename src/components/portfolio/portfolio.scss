@@ -125,7 +125,26 @@
         justify-content: center;
         align-items: center;
         z-index: 999;
-        overflow: hidden;        
+        overflow: hidden;     
+        
+        .imageContainer {
+            flex: 1;
+            max-height: 300px;
+            width: 50%;
+            margin-bottom: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+
+                @include mobile {
+                    object-fit: contain;
+                    max-height: 250px;
+                }
+            }
+        }
 
         .modal-content {
             background: white;
@@ -139,26 +158,7 @@
             @include mobile {
                 padding: 10px;
                 max-width: 100%;
-            }
-
-            .imageContainer {
-                flex: 1;
-                max-height: 300px;
-                width: 100%;
-                // margin-bottom: 1rem;
-    
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 8px;
-    
-                    @include mobile {
-                        object-fit: contain;
-                        max-height: 250px;
-                    }
-                }
-            }
+            }            
 
             button {
                 background: #007bff;

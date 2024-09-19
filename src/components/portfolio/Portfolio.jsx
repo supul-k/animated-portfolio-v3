@@ -101,11 +101,10 @@ const Portfolio = () => {
                         exit={{ opacity: 0, scale: 0.8 }}
                         transition={{ duration: 0.3 }}
                     >
-                        
-                        <motion.div className="modal-content">
-                            <div className="imageContainer" ref={ref}>
-                                <img src={selectedItem.img} alt="image" />
-                            </div>
+                        <div className="imageContainer" ref={ref}>
+                            <img src={selectedItem.img} alt="image" />
+                        </div>
+                        <motion.div className="modal-content">                            
                             <motion.h2>{selectedItem.title}</motion.h2>
                             <motion.p>{selectedItem.desc}</motion.p>
                             <button onClick={() => setSelectedId(null)}>Close</button>
