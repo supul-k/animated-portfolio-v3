@@ -18,6 +18,7 @@
             align-self: center;
             text-align: center;
             flex-direction: column;
+            gap: 10px;
         }
 
         p{
@@ -25,6 +26,10 @@
             font-size: 20px;
             color: gray;
             text-align: right;
+
+            @include mobile{
+                font-size: 16px;
+            }
         }
 
         hr{
@@ -76,7 +81,7 @@
                 font-weight: 100;
 
                 @include mobile{
-                    font-size: 36px;
+                    font-size: 24px;
                 }
             }
 
@@ -92,7 +97,7 @@
                 @include mobile{
                     font-size: 16px;
                     width: 200px;
-                    height: 50px;
+                    height: 30px;
                 }
             }
         }
@@ -108,7 +113,7 @@
         @include mobile{
             flex-direction: column;
             width: 100%;
-            gap: 20px;
+            gap: 10px;
         }
 
         .box{
@@ -121,7 +126,8 @@
             @include mobile{
                 border: none;
                 align-items: center;
-                gap: 20px;
+                flex-direction: row;
+                gap: 0px;
                 padding: 20px;
             }
 

@@ -28,8 +28,7 @@ const items = [
     { id: 1, name: "HomePage", link: "#HomePage" },
     { id: 2, name: "Services", link: "#Services" },
     { id: 3, name: "Portfolio", link: "#Portfolio" },
-    { id: 4, name: "Contact", link: "#Contact" },
-    { id: 5, name: "About", link: "#About" }
+    { id: 4, name: "Contact", link: "#Contact" }
 ]
 
 const Links = () => {
