@@ -1,6 +1,6 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform, AnimatePresence } from "framer-motion";
 
 const items = [
     {
@@ -35,7 +35,7 @@ const items = [
     },
 ]
 
-const Single = ({ item }) => {
+const Single = ({ item, setSelectedId  }) => {
     const ref = useRef();
 
     const { scrollYProgress } = useScroll({
@@ -53,7 +53,7 @@ const Single = ({ item }) => {
                 <motion.div className="textContainer" style={{ y }}>
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <button>See Demo</button>
+                    <button onClick={() => setSelectedId(item.id)}>Show More</button>
                 </motion.div>
             </div>
         </div>
@@ -74,6 +74,13 @@ const Portfolio = () => {
         damping: 30
     });
 
+    const [selectedId, setSelectedId] = useState(null);
+    console.log("selectedId", selectedId);
+    
+
+    const selectedItem = items.find(item => item.id === selectedId);
+    console.log("selectedItem", selectedItem);
+
     return (
         <div className="Portfolio" ref={ref}>
             <div className="progress">
@@ -81,8 +88,31 @@ const Portfolio = () => {
                 <motion.div style={{ scaleX }} className="progressBar"></motion.div>
             </div>
             {items.map((item) => (
-                <Single key={item.id} item={item} />
+                <Single key={item.id} item={item} setSelectedId={setSelectedId}/>
             ))}
+
+            <AnimatePresence>
+                {selectedId && selectedItem && (
+                    <motion.div
+                        className="modal"
+                        layoutId={selectedId}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        
+                        <motion.div className="modal-content">
+                            <div className="imageContainer" ref={ref}>
+                                <img src={selectedItem.img} alt="image" />
+                            </div>
+                            <motion.h2>{selectedItem.title}</motion.h2>
+                            <motion.p>{selectedItem.desc}</motion.p>
+                            <button onClick={() => setSelectedId(null)}>Close</button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     )
 }
