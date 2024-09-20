@@ -64,7 +64,7 @@ const Services = () => {
                         Build enterprise-grade web applications using React for the front-end and ASP.NET with Entity Framework Core and MSSQL for the back-end.
                         Suitable for businesses needing secure and scalable solutions.
                     </p>
-                    <button>Go</button>
+                    <button><a href="#Contact">Contact Me</a></button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
                     <h2>Full-Stack Web Applications</h2>
@@ -72,7 +72,7 @@ const Services = () => {
                         Develop robust and scalable web applications using React for the front-end and Node.js with MongoDB for the back-end.
                         Ideal for building dynamic, data-driven applications.
                     </p>
-                    <button>Go</button>
+                    <button><a href="#Contact">Contact Me</a></button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
                     <h2>Animated Portfolio Design</h2>
@@ -80,7 +80,7 @@ const Services = () => {
                         Create visually engaging, interactive portfolio websites with smooth animations using React and Framer Motion.
                         Perfect for showcasing your work in a dynamic and modern way.
                     </p>
-                    <button>Go</button>
+                    <button><a href="#Contact">Contact Me</a></button>
                 </motion.div>
                 <motion.div className="box" whileHover={{ backgroundColor: "lightgray", color: "black" }}>
                     <h2>Cloud Deployment & DevOps</h2>
@@ -88,7 +88,7 @@ const Services = () => {
                         Deploy and manage applications on AWS, implement CI/CD pipelines, and use Docker and Kubernetes for containerization and orchestration.
                         Ensure smooth and automated deployment processes.
                     </p>
-                    <button>Go</button>
+                    <button><a href="#Contact">Contact Me</a></button>
                 </motion.div>
             </motion.div>
         </motion.div>
