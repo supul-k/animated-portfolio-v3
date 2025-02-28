@@ -75,7 +75,7 @@ const Hero = () => {
                 Web solutions from front to back
             </motion.div>
             <div className="imageContainer">
-                <img src="/images/heroes.png" alt="hero" />
+                <img src="/images/1.png" alt="hero" />
             </div>
         </div>
     )
